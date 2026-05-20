@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Analytics Dashboard | Data Visualization Project</title>
+    <meta
+        name="description"
+        content="An interactive D3.js data visualization project that turns portfolio analytics CSV data into an engaging traffic dashboard."
+    />    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <main id="top" class="container">
+        <section class="chart-card">
+        <p class="eyebrow">Data Visualization Project</p>
+
+        <h1>Portfolio Analytics Dashboard</h1>
+
+        <div class="stack">D3.js · CSV Data · JavaScript · Interactive Charts</div>
+
+        <p>
+            An interactive dashboard that transforms portfolio analytics data into a clear,
+            engaging bar chart with hover-based insights for new users and total users.
+        </p>
+
+        <svg id="analytics-chart" viewBox="0 0 520 320"></svg>
+        <p class="data-note">
+             Note: This dashboard uses sample analytics data for demonstration purposes only.
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

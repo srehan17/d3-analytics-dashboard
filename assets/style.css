@@ -1,0 +1,89 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: "Nunito Sans", system-ui, sans-serif;
+  background: #f8fafc;
+  color: #18181b;
+}
+
+svg {
+  max-width: 100%;
+}
+
+.chart-card h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: #18181b;
+}
+
+.stack {
+  margin-top: 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4682b4;
+}
+
+.chart-card p:not(.eyebrow):not(.data-note) {
+  max-width: 620px;
+  margin: 1rem auto 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #52525b;
+}
+
+.container {
+  width: min(100% - 2rem, 900px);
+  margin: 0 auto;
+}
+
+.chart-card {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0;
+  background: linear-gradient(135deg, #ffffff, #f6f8ff);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4682b4;
+}
+
+#analytics-chart {
+  display: block;
+  margin: 1.5rem auto 0;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  overflow: visible;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 0.55rem 0.75rem;
+  background: #18181b;
+  color: white;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.data-note {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #71717a;
+}
